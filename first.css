@@ -4,20 +4,52 @@ body{
     background-image: url("varture.pnj.jpg");
     background-size: cover;
 }
-div{
-    background-color: rgb(255,256,9);
+ header{
+    background-color:rgb(255,256,9);
     height: 30px;
     font-size: 20px;
-}
+} 
 #div1{
     border-width: solid;
     border-color: black;
     border-radius: 5px;
 }
 a{
-    margin: 70px;
+    margin: 65px;
 }
 #Main{
     font-size:30px;
     color: beige;
+}
+.cCode {
+    /* background-color:black; */
+    color: white;
+}
+#cCodeDiv{
+    background-color: black;
+    height: 200px;
+    width: 500px;
+    border-radius: 10px;
+    border:3px solid rgb(94, 9, 241);
+    /* padding: 10px; */
+    font-size: xx-large;
+}
+.cCodeText{
+    color:red;
+    font-size: 30px;
+    text-decoration:underline;
+}
+#javaCodeDiv{
+    background-color: black;
+    height: 250px;
+    width: 800px;
+    border-radius: 10px;
+    border:3px solid rgb(94, 9, 241);
+    /* padding: 1px; */
+    font-size: xx-large;
+
+}
+video{
+    height: 500px;
+    width: 700px;
 }
