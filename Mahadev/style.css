@@ -2,9 +2,9 @@
     box-sizing: border-box;
 }
 body{
-    background-image: url(bholebaba.jpg);
+    background-image: url(holi3.avif);
     min-height: 100vh;
-    background-size: cover;
+    background-size:contain;
     background-position: center center;
     align-items: center;
     display: flex;

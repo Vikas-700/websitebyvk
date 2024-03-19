@@ -1,5 +1,5 @@
-alert("Wellcome in my website.");
-console.log("Hello gyes!");
+alert("Welcome in my website.");
+console.log("Hello guys!");
 fullName="Vikas kumar";
 console.log(fullName);
 age=19;

@@ -1,0 +1,16 @@
+*{
+    padding:0;
+    margin: 0;
+
+}
+body{
+    display:flex;
+}
+.header{
+    background-color: #11dbf5;
+    padding: 3rem;
+}
+.header li{
+    list-style: none;
+    display: inline;
+}

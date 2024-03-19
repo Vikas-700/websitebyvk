@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        *{
+            /* background-color: aqua; */
+            color: rgb(14, 13, 13);
+        }
+        #red{
+            background-color: yellow;
+            color:red;
+        }
+        table,th,td{
+            border:3px solid white;
+            border-collapse: collapse;
+            border-style:ridge;
+        }
+        .blue{
+            background-color: white;
+            color:black;
+            border: 2px white;
+            background-position: center ;
+        }
+        #Your{
+            word-break: 40px;
+        }
+        div{
+            background-color: aqua;
+            margin-right: 60rem;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <table>
+            <form action="">
+                <caption id="red"> Registration Form</caption>
+                <tr>
+                    <th>
+                        <label for="name"> Enter Name </label>
+                    </th>
+                   <td>
+                    <input type="text" id="name" name="name">
+                   </td> 
+                </tr>
+                <tr>
+                    <th>
+                        <label for="pass"> Enter Password</label>
+                    </th>
+                   <td>
+                    <input type="password" id="pass" name="pass">
+                   </td> 
+                </tr>
+                <tr>
+                    <th>
+                        <label for="addr"> Enter Address </label>
+                    </th>
+                   <td>
+                    <textarea cols="12" rows="3"></textarea>
+                   </td> 
+                </tr>
+                <tr>
+                    <th>
+                        <label for="check"> Select Game</label>
+                    </th>
+                    <td>
+                        <input type="checkbox" name="check" id="ckeck" value="Hockey"> Hockey <br>
+                        <input type="checkbox" name="check" id="ckeck" value="Football"> Football <br>
+                        <input type="checkbox" name="check" id="ckeck" value="Badminton"> Badminton <br>
+                        <input type="checkbox" name="check" id="ckeck" value="Cricket"> Cricket <br>
+                        <input type="checkbox" name="check" id="ckeck" value="Volleyball "> Volleyball
+
+                    </td>
+                </tr>
+                <tr><th><label for="gender"> Gender</label></th>
+                    <td><input type="radio" id="gender" name="gender" value="male">Male 
+                    <input type="radio" id="gender" name="gender" value="Female">Female</td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="drop"> Select Your Age</label>
+                    </th>
+                    <td> 
+                        <select name="drop" id="drop"> <option value=""> Select</option>
+                            <option value="1-10"> 1-10</option>
+                            <option value="11-20"> 11-20</option>
+                            <option value="21-30"> 21-30</option>
+                         <option value="31-40"> 31-40</option>
+                         <option value="41-50"> 41-50</option>
+                         <option value="51-60"> 51-60</option></select>
+                    </td>
+                </tr>
+                <tr>
+                    <th>
+                        <label for="photo"> Select photo</label>
+                    </th>
+                    <td>
+                        <input type="file" id="photo" name="photo" multiple>
+                    </td>
+                </tr>
+                <tr id="Your">
+                    <th colspan="2">
+                        <span class="blue"> <input type="button" onclick="alert(Hello,world)" value="Click Me!"></span>
+                        <span class="blue"> <input type="reset" value="Reset"></span>
+                        <span class="blue"> <input type="submit" value="Submit Form"></span>
+                    </th>
+                </tr>
+            </form>
+        </table>
+    </div>
+    
+</body>
+</html>

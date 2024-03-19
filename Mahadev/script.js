@@ -2,7 +2,7 @@ const daysEl = document.getElementById("days");
 const hoursEl = document.getElementById('hours');
 const minutesEl = document.getElementById('minutes');
 const secondsEl = document.getElementById('seconds');
-const mahashivratri = "8 March 2024";
+const mahashivratri = "25 March 2024";
 
 function countdown() {
     const mahashivratriDate = new Date(mahashivratri);
