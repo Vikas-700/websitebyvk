@@ -3,15 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(6, 6, 6);
+            display: flex;
+            justify-content: center; /* Center the form horizontally */
+            align-items: center; /* Center the form vertically */
+            height: 100vh; /* Make sure the form takes up the full viewport height */
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+        }
+        #mainForm{
+            background-color: rgb(186, 217, 12);
+            width: 450px;
+            padding: 1rem;
+            border: 1rem solid white;
+        }
+        .box{
+            background-color:rgba(255,255,255 ,0.5);
+            /* background-color:transparent; */
+            margin: 4px;
+            padding: 6px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .box input{
+            margin-left: 2rem;
+            border: none;
+            padding: 5px;
+            border-radius: 3px;
+        }
+        .box.logo{
+            position: absolute;
+             left: -30px; /* Adjust the position of the logo */
+            top: 0;
+            width: 20px; /* Adjust the width of the logo */
+             height: 20px;
+            background-image: url(logovisa.png);
+            background-size: cover;
+        }
+        .cardtype input{
+            margin-top: 20px;
+        }
+        #buten{
+            background-color: black;
+            color: white;
+            text-align: center;
+            border-radius: 25px;
+            margin-left: 9rem;
+            font-size: 1.5rem;
+            margin-top: 10px;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        .box textarea{
+            margin-left: 3rem;
+        }
+        .box textarea{
+            resize: vertical;
+            border-radius: 2px;
+            border: none;
+        }
+    </style>
 </head>
 <body>
-    <div class="header">
-            <li> <a href ="#"> Home </a></li>
-            <li> <a href ="#"> About </a></li>
-            <li>  <a href ="#">Contacts us </a></li>
-            <li>  <a href ="#">Services </a></li>
+    <form  id="mainForm">
+    <h4>Step 1: Your details</h4>
+    
+       <div class="box"> <label for="name"> Name</label>
+        <input type="text" id="name" name="name" < placeholder="First and last name">  </div>
+       <div class="box"> <label for="name"> Email</label>
+        <input type="text" id="name" name="name" < placeholder="example@domain.com"> </div>
+       <div class="box"> <label for="name"> Phone</label>
+        <input type="text" id="name" name="name" < placeholder="Eg. +4475000000000"> </div>
+        <h4>Step 2: Delivery address</h4>
+        <div class="box"> <label for="address" id="address">Address
+         <textarea cols="20" rows="5"></textarea> </label> </div>
+         <div class="box"> <label for="post code"> Post code</label>
+        <input type="number">
         </div>
-    <script src="script.js"></script>
+        <div class="box">
+            <label for="country"> Country</label>
+            <input type="text">
+        </div>
+        <h3>Step 3:Card Details</h3>
+        <div class="box cardtype">
+            <label for="card_type"> Card type
+                <br>
+            <input type="radio" id="card_type" name="card_type" value="visa">
+            <img src="logovisa.png" alt="" height="15" width="25"> 
+            VISA
+            <input type="radio" id="card_type" name="card_type" value="visa">
+            <img src="amexlogo.png" alt="" height="15" width="25"> 
+            AmEx
+            <input type="radio" id="card_type" name="card_type" value="visa">
+            <img src="mastercard.png" alt="" height="15" width="25"> 
+            Mastercard
+           </label>
+        </div>
+        <div class="box">
+            <label for="card_number"> Card Number</label>
+            <input type="text" id="card_number" name="card_number">
+        </div>
+        <div class="box">
+            <label for="security_code"> Security Code</label>
+            <input type="text" id="security_code" name="security_code">
+        </div>
+        <div class="box">
+            <label for="cardHolderName"> Name on Card</label>
+            <input type="text" id="cardHolderName" name="cardHolderName" placeholder="Exact name as on the card">
+        </div>
+        <button id="buten">BUY IT!</button>
+     </form>
 </body>
 </html>
